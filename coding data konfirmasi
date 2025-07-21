@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Konfirmasi - MXUEI</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #eef6f9;
+            padding: 20px;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1e8449;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 13px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Form Konfirmasi - MXUEI</h2>
+        <form action="proses_konfirmasi.php" method="post">
+            <label for="id_pesanan">ID Pesanan / Transaksi:</label>
+            <input type="text" id="id_pesanan" name="id_pesanan" required>
+
+            <label for="nama_pemesan">es cream boba mixue:</label>
+            <input type="text" id="nama_pemesan" name="nama_pemesan" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" elisasiagian636@gmail.com" required>
+
+            <label for="tanggal_konfirmasi">Tanggal Konfirmasi:</label>
+            <input type="date" id="tanggal_konfirmasi" elisa 21 juli 2025" required>
+
+            <label for="jenis_konfirmasi">Jenis Konfirmasi:</label>
+            <select id="jenis_konfirmasi" name="jenis_konfirmasi" required>
+                <option value="">-- Pilih Jenis Konfirmasi --</option>
+                <option value="Pembayaran">Pembayaran</qris>
+                <option value="Pengiriman">Pengiriman</option>
+                <option value="Lainnya">Lainnya</option>
+            </select>
+
+            <label for="keterangan">Keterangan Tambahan:</label>
+            <textarea id="keterangan" name="keterangan" rows="3" placeholder=" Sudah transfer ke rekening BCA, mohon dicek."></textarea>
+
+            <button type="submit">Kirim Konfirmasi</button>
+        </form>
+
+        <div class="footer">
+            &copy; 2025 MXUEI Confirmation Center
+        </div>
+    </div>
+
+</body>
+</html>
