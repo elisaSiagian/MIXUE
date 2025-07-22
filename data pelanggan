@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Pelanggan Mixue</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8f0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #d61a3c;
+    }
+    table {
+      width: 80%;
+      margin: auto;
+      border-collapse: collapse;
+      background-color: white;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #ffcad4;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Data Pelanggan Mixue</h1>
+  <table>
+    <tr>
+      <th>No</th>
+      <th>Nama Pelanggan</th>
+      <th>Nomor HP</th>
+      <th>Alamat</th>
+      <th>Pesanan</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Rani Putri</td>
+      <td>081234567890</td>
+      <td>Jl. Melati No.10</td>
+      <td>Brown Sugar Boba</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Dika Pratama</td>
+      <td>082345678901</td>
+      <td>Jl. Mawar No.5</td>
+      <td>Lemon Tea</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Siti Rahma</td>
+      <td>083456789012</td>
+      <td>Jl. Kenanga No.3</td>
+      <td>Sundae Vanilla</td>
+    </tr>
+  </table>
+</body>
+</html>
