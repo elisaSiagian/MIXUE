@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pembayaran Mixue</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff6f7;
+      margin: 0;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #d61a3c;
+    }
+
+    .form-container {
+      max-width: 500px;
+      background-color: #ffffff;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #444;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #ff4d6d;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e63956;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Form Pembayaran</h1>
+
+  <div class="form-container">
+    <form>
+      <label for="nama">Nama Pelanggan:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="metode">Metode Pembayaran:</label>
+      <select id="metode" name="metode" required>
+        <option value="">-- Pilih Metode --</option>
+        <option value="tunai">Tunai</option>
+        <option value="qris">QRIS</option>
+        <option value="transfer">Transfer Bank</option>
+        <option value="ewallet">E-Wallet</option>
+      </select>
+
+      <label for="total">Total Bayar (Rp):</label>
+      <input type="number" id="total" name="total" required>
+
+      <label for="bayar">Jumlah yang Dibayarkan:</label>
+      <input type="number" id="bayar" name="bayar" required>
+
+      <button type="submit">Proses Pembayaran</button>
+    </form>
+  </div>
+
+</body>
+</html>
