@@ -1,0 +1,91 @@
+
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pesanan Mixue</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff7f8;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #d61a3c;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 90%;
+      margin: auto;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+      border: 1px solid #ffdce2;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #ffb6c1;
+      color: white;
+      font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fff0f2;
+    }
+
+    tr:hover {
+      background-color: #ffe6ea;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Daftar Pesanan Mixue</h1>
+
+  <table>
+    <tr>
+      <th>No</th>
+      <th>Nama Pelanggan</th>
+      <th>Tanggal Pesan</th>
+      <th>Menu</th>
+      <th>Jumlah</th>
+      <th>Total Harga</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Rani Putri</td>
+      <td>21 Juli 2025</td>
+      <td>Brown Sugar Boba</td>
+      <td>2</td>
+      <td>Rp 38.000</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Dika Pratama</td>
+      <td>21 Juli 2025</td>
+      <td>Lemon Tea</td>
+      <td>1</td>
+      <td>Rp 15.000</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Siti Rahma</td>
+      <td>21 Juli 2025</td>
+      <td>Sundae Vanilla</td>
+      <td>3</td>
+      <td>Rp 27.000</td>
+    </tr>
+  </table>
+
+</body>
+</html>
+
