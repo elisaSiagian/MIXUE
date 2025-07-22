@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Konfirmasi Pembayaran</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdf1f2;
+      margin: 0;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #cc1133;
+    }
+
+    .form-container {
+      max-width: 500px;
+      background-color: #fff;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+      color: #444;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      background-color: #ff3366;
+      color: white;
+      font-weight: bold;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e62e5c;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Konfirmasi Pembayaran</h1>
+
+  <div class="form-container">
+    <form>
+      <label for="nama">Nama Pelanggan:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="idPesanan">ID Pesanan:</label>
+      <input type="text" id="idPesanan" name="idPesanan" required>
+
+      <label for="bank">Metode Pembayaran:</label>
+      <select id="bank" name="bank" required>
+        <option value="">-- Pilih Metode --</option>
+        <option value="bca">BCA</option>
+        <option value="bni">BNI</option>
+        <option value="qris">QRIS</option>
+        <option value="gopay">Gopay</option>
+        <option value="dana">DANA</option>
+      </select>
+
+      <label for="bukti">Upload Bukti Pembayaran:</label>
+      <input type="file" id="bukti" name="bukti" accept="image/*" required>
+
+      <label for="catatan">Catatan Tambahan (opsional):</label>
+      <textarea id="catatan" name="catatan" rows="4"></textarea>
+
+      <button type="submit">Kirim Konfirmasi</button>
+    </form>
+  </div>
+
+</body>
+</html>
